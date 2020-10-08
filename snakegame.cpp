@@ -12,9 +12,9 @@
 #include<time.h>
 #include<process.h>
 #include<stdio.h>
-#define  UP 72
-#define  DOWN 80
-#define  RIGHT 77
+#define  UP 75
+#define  DOWN 85
+#define  RIGHT 75
 #define  LEFT 75
 
 using namespace std;
@@ -69,13 +69,13 @@ int main() // Opening of main()
 	
 	void print()
 	{
-	 system("color 0a");	
-     system("title SNAKE GAME"); 	  
+	 system("color 0d");	
+   system("title SNAKE GAME"); 	  
 	 cout<<"\n\t\t  ******** **    *   ***   *   * *******    ********   ***   **    ** ******* ";
 	 cout<<"\n\t\t  **       * *   *  ** **  *  *  *          *         ** **  * *  * * *       ";
 	 cout<<"\n\t\t  ******** *  *  * ******* ***   ******     *  ***** ******* *  **  * ******  ";
 	 cout<<"\n\t\t        ** *   * * **   ** *  *  *          *      * **   ** *      * *       ";
-     cout<<"\n\t\t  ******** *    ** **   ** *   * *******    ******** **   ** *      * ******* ";
+   cout<<"\n\t\t  ******** *    ** **   ** *   * *******    ******** **   ** *      * ******* ";
 	 cout<<"\n\n\t\t\t\t\t\t\t\t\t Written By : Poetic Flamingo";
 	 cout<<"\n\n\t\t\t\t\t     Welcome To Mini SnakeGame\n\n";
 	 cout<<"\n  [+] This is a simple snakegame which is written in C++";
@@ -85,23 +85,27 @@ int main() // Opening of main()
 	 cout<<"\n  [+] Your length will get increases as you eat a fruit.";
 	 cout<<"\n  [+] You are provided with three life and each time you strike the cross or snake\n\tbody . Your life will decreases by one."; 
 	 cout<<"\n  [+] Press 'ESC' to Exit The Game at Any Moment!!!\n\n";
-     cout<<"\n Press Any Key To Continue...";
-     if(getch()==27)
-     exit(0);
-     }
+   cout<<"\n Press Any Key To Continue...";
+   if(getch()==27)
+   exit(0);
+   }
+
+  void printhelp(){
+    cout<<"This repository is written by poetic flamingo";
+  }
     
 	void load()
 	{   
 	    char ch;
 		int i,j;
 		gotoxy(50,12);
-	    cout<<"loading...";
+	  cout<<"loading...";
 		ch=178;
 		gotoxy(45,13);
 		for(i=0;i<19;i++)
 		{
-          for(j=0;j<100000000;j++);	  
-    	  cout<<ch;
+        for(j=0;j<1000000000000;j++);	  
+    	    cout<<ch;
 		  }
 	}
 	
@@ -113,10 +117,10 @@ int main() // Opening of main()
      cout<<"O";
 	 for(i=11;i<109;i++)
 	 {
-       GotoXY(i,0);
+     GotoXY(i,0);
 	   cout<<"X";
 	   GotoXY(i,27);
-       cout<<"X";
+     cout<<"X";
 	   
 	 }	   
 	 
